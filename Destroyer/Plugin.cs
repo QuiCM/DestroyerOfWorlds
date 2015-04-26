@@ -81,7 +81,7 @@ namespace Destroyer
 							continue;
 						}
 
-						if (Main.tile[(int) (npc.position.X/16f), (int) (npc.position.Y/16f) + i].active())
+						if (Main.tile[(int) (npc.position.X/16f) + i, (int) (npc.position.Y/16f) + i].active())
 						{
 							WorldGen.KillTile((int) (npc.position.X/16f) + i, (int) (npc.position.Y/16f) + i);
 							TSPlayer.All.SendTileSquare((int) (npc.position.X/16f) + i, (int) (npc.position.Y/16f) + i);
@@ -121,7 +121,7 @@ namespace Destroyer
 						continue;
 					}
 
-					if (Main.tile[(int) (npc.position.X/16f), (int) (npc.position.Y/16f) + i].active())
+					if (Main.tile[(int) (npc.position.X/16f) + i, (int) (npc.position.Y/16f) + i].active())
 					{
 						WorldGen.KillTile((int) (npc.position.X/16f) + i, (int) (npc.position.Y/16f) + i);
 						TSPlayer.All.SendTileSquare((int) (npc.position.X/16f) + i, (int) (npc.position.Y/16f) + i);
