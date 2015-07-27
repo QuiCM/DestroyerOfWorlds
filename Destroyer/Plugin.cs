@@ -6,7 +6,7 @@ using TShockAPI;
 
 namespace Destroyer
 {
-	[ApiVersion(1, 17)]
+	[ApiVersion(1, 20)]
 	public class Destroyer : TerrariaPlugin
 	{
 		public override string Author
